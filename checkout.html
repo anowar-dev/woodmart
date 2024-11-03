@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikrihoy</title>
+
+    <!-- Slick slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Bootrtrap css -->
+    <link rel="stylesheet" href="./css/bootstrapcss/bootstrap.min.css">
+
+    <!-- FontAwesome CSS -->
+    <!-- <link rel="stylesheet" href="./css/fontawesome/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome/fontawesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/customcss/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="headerMain">
+                <a href="index.html" class="headerLogo">
+                    <img src="./images/logo/buy-icon.png" alt="">
+                    <h2 class="logotitle">Woodmart</h2>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Checkout section -->
+    <section class="checkoutSection">
+        <div class="container">
+            <div class="checkoutMain">
+
+                <div class="sectionDevider tCheckout">
+                </div>
+                <!-- Coupon code -->
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header top">
+                        <span class="cFirst">Have a coupon?</span>
+                        <button class="checkout accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            here to enter your code
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <form action="#" class="couponDivMain">
+                            <div class="couponaply">
+                                <span>If you have a coupon code, please apply it below.</span>
+                                <div class="couponDiv">
+                                    <input type="text" placeholder="Coupon code">
+                                    <button class="btn_primary apply">Apply Coupon</button>
+                                </div>
+                            </div>
+                            <p class="couponApplied"><b>Coupon</b> Applied</p>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                   
+                </div>
+
+                <!-- main form -->
+                 <form action="#" class="ckeckoutForm">
+
+                    <!-- Payment amout calculate -->
+                    <div class="checkoutFormRight">
+                        <div class="orderprocess">
+                            <h3 class="orderproces">Your Order</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Product</th>
+                                        <th>Subtotal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Olevs 1005 Green Stainless Steel Analoge Golden Chain dial  × 3</td>
+                                        <td>৳ 4,950.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>OLEVS 1002 Man’s Premium Watch Golden Black  × 1</td>
+                                        <td>৳ 1,850.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Subtotal</b></td>
+                                        <td><b>৳ 6,800.00</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Shipping</b></td>
+                                        <td class="checkradio">
+                                            <div>
+                                                <label for="outDhaka">Outside Dhaka: <span>৳ 130.00</span></label>
+                                                <input type="radio" name="shipping" id="OutDhaka" checked>
+                                            </div>
+                                            <div>
+                                                <label for="inDhaka">Inside Dhaka: <span>৳ 70.00</span></label>
+                                                <input type="radio" name="shipping" id="inDhaka">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><b>Total</b></td>
+                                        <td><strong>৳ 6,930.00</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Billing info -->
+                    <div class="checkoutFormLeft">
+                        <div class="address">
+                            <span class="numberCountBill">1.</span>
+                            <h3 class="addressTitle">Billing Details</h3>
+                        </div>
+
+                        <label for="Cname">পুরো নাম *</label>
+                        <input type="text" name="#" id="Cname" required>
+
+                        <label for="Cmobile">মোবাইল নাম্বার *</label>
+                        <input type="tel" name="#" id="Cmobile" required>
+
+                        <label for="Caddress">পুর্ণ ঠিকানা *</label>
+                        <input type="text" name="#" id="Caddress" required>
+                        
+                        <label for="Caddress">Country / Region *</label>
+                        <input class="disabledr" type="text" name="#" id="Caddress" value="Bangladesh" disabled>
+
+                        <div class="pamentInfoMain">
+                            <div class="address">
+                                <span class="numberCountBill">2.</span>
+                                <h3 class="addressTitle">Payment Information</h3>
+                            </div>
+
+                            <label for="cashDelidery">Cash on delivery</label>
+                            <input class="disabledr" type="text" value="Pay with cash upon delivery." name="#" id="cashDelidery" disabled>
+                            <p class="paragraph">Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our <a href="#">privacy policy.</a></p>
+                            <button class="btn_primary w-100">Place Order</button>
+                        </div>
+                    </div>
+
+                 </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Bootstrap js -->
+    <script src="./js/bootstrapJs/bootstrap.min.js"></script>
+
+    <!-- Jquery js -->
+    <script src="./js/jquery/jquery-3.7.1.min.js"></script>
+
+    <!-- Slick slider -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Custom js -->
+    <script src="./js/customjs/script.js"></script>
+</body>
+</html>

@@ -41,5 +41,27 @@ $(document).ready(function(){
          leargeImg.eq(index).addClass("active");
       });
     }
+
+    {
+      let count = 1;
+      let countInput = $(".countShow");
+      $(".plusBtn").click(function(){
+         count ++;
+         countInput.val(count);
+      });
+      $(".minusBtn").click(function(){
+         if(count >1){
+            count = count -1;
+            countInput.val(count);
+         }
+      });
+
+      $(".apply").click(function(e){
+         e.preventDefault();
+         $(this).closest(".couponaply").hide();
+         $(".couponApplied").show();
+      });
+    }
+    
 });
  
