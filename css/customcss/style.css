@@ -164,6 +164,7 @@ body{
     color: #ffffff;
     padding-left: 2rem;
     padding-right: 2rem;
+    white-space: nowrap;
 }
 .productData .btn_primary{
     margin-left: auto;
@@ -232,16 +233,35 @@ body{
 .orderAndContity .btn_primary{
     margin-left: 0;
 }
+.btn_primary.whatapp{
+    background: #00B512;
+}
+.callBtns{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 2rem;
+    margin-top: 1rem;
+}
 .callBtn{
+    background: var(--primary-color);
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    width: fit-content;
+    padding: .7rem 1.5rem;
+    border-radius: .8rem;
+}
+.whatsappbnt{
     background: #00B512;
     text-decoration: none;
     color: #ffffff;
     display: block;
     text-align: center;
     width: fit-content;
-    padding: 1rem 3rem;
+    padding: .7rem 1.5rem;
     border-radius: .8rem;
-    margin-top: 1rem;
 }
 .countShow{
     width: 2rem;
@@ -263,6 +283,14 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 .callBtn p{
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 0; 
+    padding-bottom: 0; 
+}
+.whatsappbnt p{
     font-size: 1.3rem;
     font-weight: 700;
     text-decoration: none;
@@ -327,7 +355,7 @@ input[type="number"] {
     margin-top: -2rem;
 }
 .pdrightInner{
-    padding-left: 3rem;
+    padding-left: 1.5rem;
     display: block;
 }
 .descTitle{
